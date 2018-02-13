@@ -14,9 +14,6 @@ export default class Test extends Component {
 
   }
 
-  componentDidMount () {
-    console.log('props in component', this.props)
-  }
   changeName ({target: {value}}) {
     this.props.changeStateProps('name', value)
   }
@@ -57,13 +54,19 @@ export default class Test extends Component {
     return (
       <div className="input-wraper">
           <div className="inputs">
+            <label>Name:</label>
             <input type='text' onChange={this.changeName} />
+            <label>Email:</label>
             <input type='email' size="13" onChange={this.changeEmail} />
+             <label>Phone:</label>
             <input type='phone' pattern="^\d{3}-\d{3}-\d{2}-\d{2}$" className="user_phone" onChange={this.changePhone} />
+            <label>Address:</label>          
             <input type='address' onChange={this.changeAddress} />
+            <label>Postcode:</label>
             <input type='postcode' onChange={this.changePostcode} />
-        </div>
+                  </div>
           <div className="date">
+        <label>Date:</label>
           <DatePicker
               type="date"
               onChange={this.onChange}

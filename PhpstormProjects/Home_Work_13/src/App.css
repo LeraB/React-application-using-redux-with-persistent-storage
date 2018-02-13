@@ -27,8 +27,12 @@
 }
 
 .inputs input{
-  margin-top: 10px;
   width: 100%;
+}
+
+label{
+  float: left;
+  margin-top: 10px;
 }
 
 .date{

@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 
 export default class Test extends Component {
-  componentDidMount () {
-    console.log('props in component', this.props)
-  }
+
   render () {
     return (
-      <div class="bla">
+      <div className = "bla">
           <p> Name: {this.props.someUserName} </p>
           <p> Email: {this.props.someUserEmail} </p>
           <p> Phone: {this.props.someUserPhone} </p>
