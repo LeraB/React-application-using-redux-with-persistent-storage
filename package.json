@@ -4,8 +4,9 @@
   "private": true,
   "dependencies": {
     "immutability-helper": "^2.6.4",
+    "moment": "^2.20.1",
     "react": "^16.2.0",
-    "react-date-picker": "^6.7.0",
+    "react-datepicker": "^1.1.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.1.0",
@@ -19,6 +20,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "react-scripts": "^0.9.5",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
   }
 }

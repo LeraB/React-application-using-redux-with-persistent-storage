@@ -1,8 +1,14 @@
 import update from 'immutability-helper'
 
 let defaultState = {
-  name: 'Lera',
-  email: 'Lera@gmail.com',
+      user: {
+        'name': '',
+        'email': '',
+        'phone': '',
+        'address': '',
+        'postcode': '',
+        'dateofbirth': null
+      }
 }
 ;
 const main = (state = defaultState, action) => {
