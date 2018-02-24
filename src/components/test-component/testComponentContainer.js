@@ -1,22 +1,29 @@
 import { connect } from 'react-redux'
-import { changeStateProps } from '../../actions'
-import Form from './form'
+import { saveFormData, changeStateProps } from '../../actions'
+import Form from './testComponent'
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        user: state.main.user,
+        formData: state.form.formData,
+        isEditing: state.form.isEditing,
         ...ownProps
-    }
+}
 }
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        changeStateProps: (prop, value) => {
-            dispatch(changeStateProps(prop, value))
+        saveFormData: function (prop, value, reducer) {
+            saveFormData(prop, value, reducer)(dispatch)
+            return null
+        },
+        changeStateProps: function (prop, value, reducer) {
+            changeStateProps(prop, value, reducer)(dispatch)
+            return null
         }
     }
 }
 
 export default connect(
     mapStateToProps,
-    mapDispatchToProps)(Form)
+    mapDispatchToProps
+)(Form)

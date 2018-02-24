@@ -9,10 +9,10 @@ import configureStore from './configureStore'
 let { store, persistor } = configureStore()
 
 ReactDOM.render(
-  <Provider store={store}>
+<Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <App />
+    <App />
     </PersistGate>
-  </Provider>,
-  document.getElementById('root')
+    </Provider>,
+    document.getElementById('root')
 )
