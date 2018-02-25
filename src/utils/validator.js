@@ -1,6 +1,6 @@
 import { EMAIL_REGEXP } from '../constants/index'
 
-// function for start fields validators
+// start fields validators.
 let isInvalid = []
 export default async function validator (data) {
     isInvalid = []
@@ -21,7 +21,7 @@ export default async function validator (data) {
     }
 }
 
-// object of validators for form fields
+// validators for form fields.
 let validators = {
         name: async (data) => {
         if (data.value === '') {

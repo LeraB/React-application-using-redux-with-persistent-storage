@@ -54,9 +54,9 @@ export default class testComponent extends Component {
         this.changeInputValue = this.changeInputValue.bind(this)
         this.handleDate = this.handleDate.bind(this)
     }
+    // get form data from redux
     componentWillMount () {
         let formEditableData = Object.assign({}, this.state.formEditableData)
-        // get form data from redux
         for (let key in this.props.formData) {
             formEditableData[key].value = this.props.formData[key]
         }
@@ -64,14 +64,14 @@ export default class testComponent extends Component {
     }
     componentWillReceiveProps (nextProps) {
         let formEditableData = Object.assign({}, this.state.formEditableData)
-        // get form data from redux
         for (let key in nextProps.formData) {
             formEditableData[key].value = nextProps.formData[key]
         }
         this.setState({formEditableData})
-    }
+    } 
+    // change input value
     changeInputValue ({target: {value, name}}) {
-        // change input value and set valid true
+       
         this.setState({
             formEditableData: update(this.state.formEditableData, {
                 [name]: {
@@ -83,8 +83,9 @@ export default class testComponent extends Component {
             this.props.saveFormData(name, value, 'form')
     })
     }
+    // change date of birth
     handleDate (date) {
-        // change date of birth
+       
         this.setState({
             formEditableData: update(this.state.formEditableData, {
                 dateOfBirth: {
@@ -95,8 +96,8 @@ export default class testComponent extends Component {
             this.props.saveFormData('dateOfBirth', date, 'form')
     })
     }
+    // submit form data
     formSubmit (event) {
-        // Submit form data
         event.preventDefault()
         if (this.props.isEditing) {
             validator(this.state.formEditableData)
