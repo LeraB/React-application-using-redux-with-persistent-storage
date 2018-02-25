@@ -12,7 +12,6 @@ const defaultState = {
         postcode: '',
         address: ''
     },
-    isEditing: true
 }
 
 export default (state = defaultState, action) => {

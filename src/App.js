@@ -4,7 +4,8 @@ import './App.css'
 import './index.scss'
 
 // Components
-import testComponent from 'components/test-component/testComponentContainer'
+import Form from './components/Form/FormContainer'
+
 
 class App extends Component {
     render () {
@@ -14,9 +15,9 @@ class App extends Component {
             <img src={logo} className='App-logo' alt='logo' />
             <h1 className='App-title'>Welcome to React</h1>
         </header>
-        <testComponent />
+        <Form />
         </div>
-    )
+      )
     }
 }
 export default App

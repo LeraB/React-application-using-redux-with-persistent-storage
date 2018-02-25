@@ -1,5 +1,7 @@
 .form-container {
-    max-width: 320px; }
+    max-width: 320px;
+}
+
 .form-container .form-button {
     min-width: 75px;
     font-size: 18px;
@@ -10,15 +12,22 @@
     border-radius: 3px;
     border: 1px solid rgba(231, 227, 224, 0.97);
     color: #fff;
-    text-align: center; }
+    text-align: center;
+}
+
 .form-container .react-datepicker-wrapper {
-    margin: 12px 0 20px; }
+    margin: 12px 0 20px;
+}
+
 .form-container .react-datepicker-wrapper input {
     font-size: 18px;
     min-width: 320px;
     padding: 12px;
     border: 1px solid gainsboro;
     border-radius: 5px;
-    background-color: rgba(235, 231, 230, 0.34); }
+    background-color: rgba(235, 231, 230, 0.34);
+}
+
 .form-container .react-datepicker-wrapper input:disabled {
-    background-color: rgba(183, 179, 178, 0.26); }
+    background-color: rgba(183, 179, 178, 0.26);
+}

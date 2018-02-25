@@ -3,11 +3,7 @@ import update from 'immutability-helper'
 import validator from '../../utils/validator'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
-
-// Components
-import InputWithValidation from '../InputWithValidation/InputWithValidation'
-
-// Styles
+import InputValidation from '../InputValidation/InputValidation'
 import 'react-datepicker/dist/react-datepicker.css'
 
 export default class testComponent extends Component {
@@ -124,7 +120,7 @@ export default class testComponent extends Component {
             <div className='form-container'>
             <form>
             <label>Name: </label>
-        <InputWithValidation
+        <InputValidation
         isEditing={this.props.isEditing}
         valid={this.state.formEditableData.name.valid}
         errorMessage={this.state.formEditableData.name.errorMessage}
@@ -133,7 +129,7 @@ export default class testComponent extends Component {
         value={this.props.formData.name}
         onChange={this.changeInputValue} />
     <label>Phone number: </label>
-        <InputWithValidation
+        <InputValidation
         isEditing={this.props.isEditing}
         valid={this.state.formEditableData.phone.valid}
         errorMessage={this.state.formEditableData.phone.errorMessage}
@@ -142,7 +138,7 @@ export default class testComponent extends Component {
         value={this.props.formData.phone}
         onChange={this.changeInputValue} />
     <label>Email: </label>
-        <InputWithValidation
+        <InputValidation
         isEditing={this.props.isEditing}
         valid={this.state.formEditableData.email.valid}
         errorMessage={this.state.formEditableData.email.errorMessage}
@@ -151,7 +147,7 @@ export default class testComponent extends Component {
         value={this.props.formData.email}
         onChange={this.changeInputValue} />
     <label>Address: </label>
-        <InputWithValidation
+        <InputValidation
         isEditing={this.props.isEditing}
         valid={this.state.formEditableData.address.valid}
         errorMessage={this.state.formEditableData.address.errorMessage}
@@ -160,7 +156,7 @@ export default class testComponent extends Component {
         value={this.props.formData.address}
         onChange={this.changeInputValue} />
     <label>Postcode: </label>
-        <InputWithValidation
+        <InputValidation
         isEditing={this.props.isEditing}
         valid={this.state.formEditableData.postcode.valid}
         errorMessage={this.state.formEditableData.postcode.errorMessage}

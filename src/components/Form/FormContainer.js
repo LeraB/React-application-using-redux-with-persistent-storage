@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { saveFormData, changeStateProps } from '../../actions'
-import Form from './testComponent'
+import Form from './Form'
 
 const mapStateToProps = (state, ownProps) => {
     return {

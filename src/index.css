@@ -9,7 +9,7 @@
     display: inline-block;
     padding: 8px 15px;
     margin: 10px auto 0;
-    background: rgba(126, 133, 135, 0.89);
+    background: #222;
     border-radius: 3px;
     border: 1px solid rgba(231, 227, 224, 0.97);
     color: #fff;
@@ -24,29 +24,27 @@
     background-color: rgba(183, 179, 178, 0.26);
 }
 
-.input-with-validation-container {
+.input-validation-container {
     position: relative;
     width: 320px;
-    padding-top: 10px;
-    margin-top: 12px;
     font-size: 18px;
     color: black;
 }
 
-.input-with-validation-container:first-child {
+.input-validation-container:first-child {
     margin-top: 0;
 }
 
-.input-with-validation-container .input.disabled {
+.input-validation-container .input.disabled {
     background-color: rgba(183, 179, 178, 0.26);
 }
 
-.input-with-validation-container .error-container {
+.input-validation-container .error-container {
     bottom: 0;
     left: 0;
 }
 
-.input-with-validation-container .error-container .error {
+.input-validation-container .error-container .error {
     margin: 0;
     color: red;
     font-size: 13px;

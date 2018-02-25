@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export default class InputWithValidation extends Component {
+export default class InputValidation extends Component {
     render () {
         return (
-            <div className='input-with-validation-container'>
+            <div className='input-validation-container'>
             <div>
             <input
         className={`input ${!this.props.isEditing ? 'disabled' : ''}`}
