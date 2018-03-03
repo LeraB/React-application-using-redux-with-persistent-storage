@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class InputValidation extends Component {
     render () {
         return (
+                // Validtion for fields.
             <div className='input-validation-container'>
             <div>
             <input
@@ -14,6 +15,7 @@ export default class InputValidation extends Component {
         value={this.props.value}
         disabled={!this.props.isEditing} />
     <div className={!this.props.valid ? 'error-container' : 'hidden'}>
+        // Error meassage for fields.
     <p className='error'>{this.props.errorMessage || ''}</p>
         </div>
         </div>

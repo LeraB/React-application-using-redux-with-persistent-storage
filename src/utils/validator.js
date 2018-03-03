@@ -35,6 +35,8 @@ let validators = {
     return data
 }
 },
+
+// validators for email field.
 email: async (data) => {
     if (data.value === '') {
         data.valid = false
@@ -52,6 +54,8 @@ email: async (data) => {
         return data
     }
 },
+
+// validators for phone field.
 phone: async (data) => {
     if (data.value === '') {
         data.valid = false
@@ -69,6 +73,8 @@ phone: async (data) => {
         return data
     }
 },
+
+// validators for address field.
 address: async (data) => {
     if (data.value === '') {
         data.valid = false
@@ -81,6 +87,8 @@ address: async (data) => {
         return data
     }
 },
+
+// validators for postcode field.
 postcode: async (data) => {
     if (data.value === '') {
         data.valid = false
@@ -93,6 +101,8 @@ postcode: async (data) => {
         return data
     }
 },
+
+// validators for date field.
 dateOfBirth: async (data) => {
     if (data.value === '') {
         data.valid = false

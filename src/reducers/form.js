@@ -14,6 +14,7 @@ const defaultState = {
     },
 }
 
+
 export default (state = defaultState, action) => {
     switch (action.type) {
         case REDUCER + CHANGE_STATE_PROPS:
